@@ -9,10 +9,10 @@ The purpose of this project is to demonstrate proficiency in Ember JS!
 
 ## Installation
 Clone onto desktop from:
-https://github.com/kha-le/6_5_Javascript_assesment.git
+https://github.com/kha-le/6_12_15_Assesment.git
 
 ## Tests
-Open the spec-runner.html file in your local browser.
+None Applicable
 
 
 
