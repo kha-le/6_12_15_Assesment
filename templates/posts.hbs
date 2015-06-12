@@ -2,9 +2,9 @@
 
 <ul>
   {{#each}}
-    <li>{{#link-to 'post' this.id}}{{title}}{{/link-to}}</li>
+    <li>{{#link-to 'post' this.id}}{{question}}, {{author}}{{/link-to}}</li>
   {{/each}}
 </ul>
 
-<p> <a href='#' {{action 'sortByTitle'}}>Sort by title</a></p>
-<p>{{#link-to 'new-post' classNames="btn btn-primary"}}New Scary post{{/link-to}}</p>
+<p> <a href='#' {{action 'sortByAuthor'}}>Sort by Author</a></p>
+<p>{{#link-to 'new-post' classNames="btn btn-primary"}}New Question{{/link-to}}</p>

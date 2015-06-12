@@ -1,4 +1,4 @@
-Blogger.NewCommentController = Ember.Controller.extend({
+MessageBoard.NewCommentController = Ember.Controller.extend({
   needs:['post'],
   actions: {
     save: function() {

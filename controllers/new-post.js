@@ -1,9 +1,10 @@
-Blogger.NewPostController = Ember.Controller.extend({
+MessageBoard.NewPostController = Ember.Controller.extend({
     actions: {
         save: function() {
             var newPost = this.store.createRecord('post', {
-                title: this.get('title'),
-                body: this.get('body')
+                question: this.get('question'),
+                author: this.get('author'),
+                description: this.get('description')
             });
             newPost.save();
             this.transitionToRoute('posts');

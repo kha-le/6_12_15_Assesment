@@ -1,4 +1,4 @@
-MessageBoard.PostController = Ember.ObjectController.extend({
+MessageBoard.CommentController = Ember.ArrayController.extend({
   isEdting: false,
   actions: {
     edit: function() {

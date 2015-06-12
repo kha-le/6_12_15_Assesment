@@ -1,7 +1,7 @@
-Blogger.PostsController = Ember.ArrayController.extend({
+MessageBoard.PostsController = Ember.ArrayController.extend({
   actions: {
-    sortByTitle: function() {
-      this.set('sortProperties', ['title']); 
+    sortByAuthor: function() {
+      this.set('sortProperties',['author']);
     }
   }
 

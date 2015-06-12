@@ -1,0 +1,7 @@
+<h2>Edit your Answer</h2>
+
+<ul>
+  {{#each}}
+    <li>{{#link-to 'post' this.id}}{{question}}, {{author}}{{/link-to}}</li>
+  {{/each}}
+</ul>

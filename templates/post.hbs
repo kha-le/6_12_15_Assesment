@@ -1,34 +1,37 @@
-<h1>{{title}}</h1>
+<h2>{{title}}</h2>
 
  {{#if isEditing}}
   <form>
     <div class="form-group">
-      <label for="title">Title</label>
-      {{input id="title" class="form-control" value=title}}
+      <label for="question">Question</label>
+      {{input id="question" class="form-control" value=question}}
     </div>
 
     <div class="form-group">
-      <label for="body">Body</label>
-      {{textarea id="body" class="form-control" rows="15" value=body}}
+      <label for="description">Description</label>
+      {{textarea id="description" class="form-control" rows="15" value=description}}
     </div>
 
     <button class="btn btn-primary" {{action 'save'}}>Save</button>
   </form>
 
  {{else}}
-  <p>{{body}}</p>
+  <h3><p>{{question}}</p></h3>
+  <p>
+    {{description}}
+  </p>
 <button class="btn btn-primary" {{action 'edit'}}> Edit</button>
 <button class="btn btn-danger" {{action 'delete'}}> Delete</button>
 {{/if}}
 
-<h2>Comments</h2>
+<h2>Answers</h2>
 
   {{#each comments}}
     <p>{{text}}</p>
   {{/each}}
 
   <p>
-    {{#link-to 'new-comment' this.id class="btn btn-default"}}New Comment{{/link-to}}
+    {{#link-to 'new-comment' this.id class="btn btn-default"}}Answer this question{{/link-to}}
   </p>
 
   {{outlet}}
